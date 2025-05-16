@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.UserSupport">
+
+    <!-- 3. activity_support.xml -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/supportSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Тема обращения"/>
+
+            <EditText
+                android:id="@+id/supportMessage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:hint="Сообщение"
+                android:gravity="start"
+                android:inputType="textMultiLine"/>
+
+
+            <Button
+                android:id="@+id/sendButton"
+                android:text="Отправить"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

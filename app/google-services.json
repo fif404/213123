@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "987832235216",
+    "firebase_url": "https://albak-7908c-default-rtdb.firebaseio.com",
+    "project_id": "albak-7908c",
+    "storage_bucket": "albak-7908c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987832235216:android:f34a234a9ebbbb41db1ad5",
+        "android_client_info": {
+          "package_name": "com.example.a533albak"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhtXWJNAlrlnASths-q23Pd9BWduxnFFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987832235216:android:32eb42b98e73faa2db1ad5",
+        "android_client_info": {
+          "package_name": "com.example.xyeta2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhtXWJNAlrlnASths-q23Pd9BWduxnFFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
