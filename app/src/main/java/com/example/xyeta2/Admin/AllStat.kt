@@ -13,6 +13,7 @@ import com.example.xyeta2.user.UserProfile // Добавляем импорт
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.firestore.FirebaseFirestore
 
 class AllStat : AppCompatActivity() {
 

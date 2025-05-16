@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("com.google.gms.google-services")
+
 }
 
 android {
@@ -68,4 +69,8 @@ dependencies {
     implementation ("com.google.firebase:firebase-database-ktx:20.3.0")
     implementation ("com.google.firebase:firebase-auth-ktx:22.3.0")
     implementation ("androidx.recyclerview:recyclerview:1.3.2")
+    implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
+    implementation("com.google.firebase:firebase-firestore") // Для Firestore
+    implementation("com.google.firebase:firebase-auth") // Для аутентификации
+    implementation("com.google.firebase:firebase-database")
 }

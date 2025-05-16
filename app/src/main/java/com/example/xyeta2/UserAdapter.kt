@@ -20,16 +20,27 @@ class UserAdapter(
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(user: User) {
             itemView.apply {
+                // Инициализация элементов
                 findViewById<TextView>(R.id.tvName).text = user.name
                 findViewById<TextView>(R.id.tvEmail).text = user.email
                 findViewById<TextView>(R.id.tvBalance).text = "Баланс: ${user.balance} ₽"
 
+                // Обработчик клика по всему элементу
+                setOnClickListener {
+                    onProfileClick(user.id)
+                }
+
+                // Обработчики кнопок
                 findViewById<Button>(R.id.btnProfile).setOnClickListener {
                     onProfileClick(user.id)
                 }
 
                 findViewById<Button>(R.id.btnDelete).setOnClickListener {
                     onDeleteClick(user.id)
+                }
+
+                findViewById<Button>(R.id.btnEdit).setOnClickListener {
+                    onEditClick(user)
                 }
             }
         }

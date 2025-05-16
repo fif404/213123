@@ -16,14 +16,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Инициализация элементов интерфейса
         emailInput = findViewById(R.id.email_et)
         loginButton = findViewById(R.id.login_btn)
 
-        // Обработчик нажатия кнопки входа
         loginButton.setOnClickListener {
             val email = emailInput.text.toString().trim()
-
             if (validateEmail(email)) {
                 checkUserRole(email)
             } else {
@@ -37,7 +34,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun checkUserRole(email: String) {
-        when (email) {
+        when (email.lowercase()) {
             "qwe@gmail.com" -> navigateToAdmin()
             "123@gmail.com" -> navigateToUser()
             else -> showError("Пользователь не найден")
@@ -46,12 +43,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun navigateToAdmin() {
         startActivity(Intent(this, com.example.xyeta2.Admin.MainAdmin::class.java))
-        finish() // Закрываем экран входа после перехода
+        finish()
     }
 
     private fun navigateToUser() {
         startActivity(Intent(this, com.example.xyeta2.user.MainUser::class.java))
-        finish() // Закрываем экран входа после перехода
+        finish()
     }
 
     private fun showError(message: String) {

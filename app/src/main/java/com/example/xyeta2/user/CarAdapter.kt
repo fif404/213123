@@ -18,7 +18,6 @@ class CarAdapter(
         fun bind(car: Car) {
             itemView.apply {
                 findViewById<TextView>(R.id.tvCarModel).text = car.model
-                findViewById<TextView>(R.id.tvPrice).text = "Цена: ${car.pricePerHour} ₽/час"
                 setOnClickListener { onItemClick(car) }
             }
         }
